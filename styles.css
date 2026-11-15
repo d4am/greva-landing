@@ -280,6 +280,8 @@ input::placeholder, textarea::placeholder { color: #64748B; }
 .footer { background: var(--navy); color: #A9B8D3; padding-top: 56px; font-size: .9375rem; }
 .footer-inner { display: grid; gap: 32px; padding-bottom: 40px; }
 .footer-logo { height: 52px; width: auto; margin-bottom: 12px; }
+.footer-backed { font-size: .8125rem; letter-spacing: .04em; margin: 0; }
+.footer-backed strong { color: #fff; letter-spacing: .08em; }
 .footer nav, .footer-contact { display: grid; gap: 10px; align-content: start; }
 .footer a { color: #fff; text-decoration: none; }
 .footer a:hover { color: var(--blue-light); }
