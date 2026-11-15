@@ -1,0 +1,23 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "icon-tile-stack",
+        "value": "*",
+        "files": [
+          "index.html"
+        ],
+        "createdAt": "2026-11-15T03:43:01.103Z",
+        "reason": "Claude: styles.css lays icon tile beside h3 via .card:has(> .icon-tile) grid; static detector reads DOM order only, verified side-by-side in browser"
+      },
+      {
+        "rule": "overused-font",
+        "value": "montserrat",
+        "createdAt": "2026-11-15T03:45:15.143Z",
+        "reason": "Claude: matches the geometric lettering of the GREVA logo (IMPORTADORA wordmark); brand-driven choice"
+      }
+    ]
+  }
+}

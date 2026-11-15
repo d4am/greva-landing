@@ -1,0 +1,388 @@
+<!doctype html>
+<html lang="es-AR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GREVA | Importaciones desde China a Argentina</title>
+  <meta name="description" content="GREVA gestiona importaciones desde China a Argentina por vía marítima y aérea. Búsqueda de proveedores, gestión aduanera y servicio puerta a puerta para empresas, emprendedores y mayoristas.">
+  <meta name="theme-color" content="#0A1733">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_AR">
+  <meta property="og:title" content="GREVA — Conectamos tu negocio con el mundo">
+  <meta property="og:description" content="Importaciones marítimas y aéreas desde China a Argentina, con acompañamiento en cada etapa.">
+  <meta property="og:url" content="https://d4am.github.io/greva-landing/">
+  <meta property="og:image" content="https://d4am.github.io/greva-landing/assets/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="GREVA Importadora">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Iconos (estilo Lucide, licencia ISC) -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <symbol id="i-ship" viewBox="0 0 24 24"><path d="M12 10.189V14"/><path d="M12 2v3"/><path d="M19 13V7a2 2 0 0 0-2-2H7a2 2 0 0 0-2 2v6"/><path d="M19.38 20A11.6 11.6 0 0 0 21 14l-8.188-3.639a2 2 0 0 0-1.624 0L3 14a11.6 11.6 0 0 0 2.81 7.76"/><path d="M2 21c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1s1.2 1 2.5 1c2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1"/></symbol>
+      <symbol id="i-plane" viewBox="0 0 24 24"><path d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2z"/></symbol>
+      <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></symbol>
+      <symbol id="i-file-check" viewBox="0 0 24 24"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="m9 15 2 2 4-4"/></symbol>
+      <symbol id="i-truck" viewBox="0 0 24 24"><path d="M14 18V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h2"/><path d="M15 18H9"/><path d="M19 18h2a1 1 0 0 0 1-1v-3.65a1 1 0 0 0-.22-.624l-3.48-4.35A1 1 0 0 0 17.52 8H14"/><circle cx="17" cy="18" r="2"/><circle cx="7" cy="18" r="2"/></symbol>
+      <symbol id="i-warehouse" viewBox="0 0 24 24"><path d="M22 8.35V20a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V8.35A2 2 0 0 1 3.26 6.5l8-3.2a2 2 0 0 1 1.48 0l8 3.2A2 2 0 0 1 22 8.35Z"/><path d="M6 18h12"/><path d="M6 14h12"/><rect width="12" height="12" x="6" y="10"/></symbol>
+      <symbol id="i-package" viewBox="0 0 24 24"><path d="m7.5 4.27 9 5.15"/><path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"/><path d="m3.3 7 8.7 5 8.7-5"/><path d="M12 22V12"/></symbol>
+      <symbol id="i-building" viewBox="0 0 24 24"><path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z"/><path d="M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2"/><path d="M18 9h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-2"/><path d="M10 6h4"/><path d="M10 10h4"/><path d="M10 14h4"/><path d="M10 18h4"/></symbol>
+      <symbol id="i-rocket" viewBox="0 0 24 24"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/><path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"/><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"/></symbol>
+      <symbol id="i-container" viewBox="0 0 24 24"><path d="M22 7.7c0-.6-.4-1.2-.8-1.5l-6.3-3.9a1.72 1.72 0 0 0-1.7 0l-10.3 6c-.5.2-.9.8-.9 1.4v6.6c0 .5.4 1.2.8 1.5l6.3 3.9a1.72 1.72 0 0 0 1.7 0l10.3-6c.5-.3.9-1 .9-1.5Z"/><path d="M10 21.9V14L2.1 9.1"/><path d="m10 14 11.9-6.9"/><path d="M14 19.8v-8.1"/><path d="M18 17.5V9.4"/></symbol>
+      <symbol id="i-shield" viewBox="0 0 24 24"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></symbol>
+      <symbol id="i-check" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></symbol>
+      <symbol id="i-tag" viewBox="0 0 24 24"><path d="M12.586 2.586A2 2 0 0 0 11.172 2H4a2 2 0 0 0-2 2v7.172a2 2 0 0 0 .586 1.414l8.704 8.704a2.426 2.426 0 0 0 3.42 0l6.58-6.58a2.426 2.426 0 0 0 0-3.42z"/><circle cx="7.5" cy="7.5" r=".5"/></symbol>
+      <symbol id="i-users" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></symbol>
+      <symbol id="i-repeat" viewBox="0 0 24 24"><path d="m17 2 4 4-4 4"/><path d="M3 11v-1a4 4 0 0 1 4-4h14"/><path d="m7 22-4-4 4-4"/><path d="M21 13v1a4 4 0 0 1-4 4H3"/></symbol>
+      <symbol id="i-trending" viewBox="0 0 24 24"><path d="M22 7 13.5 15.5 8.5 10.5 2 17"/><path d="M16 7h6v6"/></symbol>
+      <symbol id="i-mail" viewBox="0 0 24 24"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></symbol>
+      <symbol id="i-pin" viewBox="0 0 24 24"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></symbol>
+      <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></symbol>
+      <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></symbol>
+      <symbol id="i-chat" viewBox="0 0 24 24"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></symbol>
+    </defs>
+  </svg>
+
+  <a class="skip" href="#main">Saltar al contenido</a>
+
+  <header class="header">
+    <div class="container header-inner">
+      <a href="#inicio" class="brand" aria-label="GREVA Importadora, ir al inicio">
+        <img src="assets/logo.png" alt="GREVA Importadora" width="513" height="200">
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav" aria-label="Abrir menú">
+        <svg class="icon"><use href="#i-menu"/></svg>
+      </button>
+      <nav id="nav" class="nav" aria-label="Principal">
+        <a href="#servicios">Servicios</a>
+        <a href="#como-trabajamos">Cómo trabajamos</a>
+        <a href="#calculadora">Calculadora</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#cotizar" class="btn btn-primary btn-sm">Cotizar</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero" id="inicio">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <h1>Conectamos tu negocio con <span>el mundo.</span></h1>
+          <p class="hero-lead">Gestionamos tus importaciones desde China por vía marítima y aérea, con acompañamiento en cada etapa: desde la búsqueda de proveedores hasta la entrega.</p>
+          <div class="hero-ctas">
+            <a href="#cotizar" class="btn btn-primary">Solicitar cotización <svg class="icon"><use href="#i-arrow"/></svg></a>
+            <a href="#calculadora" class="btn btn-ghost">Calcular volumen</a>
+          </div>
+          <ul class="hero-chips">
+            <li><svg class="icon"><use href="#i-check"/></svg>Carga consolidada y contenedor completo</li>
+            <li><svg class="icon"><use href="#i-check"/></svg>Gestión aduanera</li>
+            <li><svg class="icon"><use href="#i-check"/></svg>Puerta a puerta</li>
+          </ul>
+        </div>
+
+        <svg class="route" viewBox="0 0 480 400" role="img" aria-label="Ruta de importación desde China hacia Argentina por vía marítima y aérea">
+          <g class="route-globe" fill="none">
+            <circle cx="240" cy="200" r="170"/>
+            <ellipse cx="240" cy="200" rx="70" ry="170"/>
+            <ellipse cx="240" cy="200" rx="135" ry="170"/>
+            <path d="M240 30v340M70 200h340M90 120h300M90 280h300"/>
+          </g>
+          <path class="route-sea" d="M372 104 C 330 250, 220 320, 118 300"/>
+          <path class="route-air" d="M372 104 C 300 60, 120 110, 118 300"/>
+          <g class="route-badge">
+            <circle cx="267" cy="264" r="24"/>
+            <use href="#i-ship" x="255" y="252" width="24" height="24"/>
+          </g>
+          <g class="route-badge">
+            <circle cx="219" cy="114" r="24"/>
+            <use href="#i-plane" x="207" y="102" width="24" height="24"/>
+          </g>
+          <g class="route-point">
+            <circle cx="372" cy="104" r="7"/>
+            <rect x="330" y="58" width="84" height="30" rx="15"/>
+            <text x="372" y="78">China</text>
+          </g>
+          <g class="route-point">
+            <circle cx="118" cy="300" r="7"/>
+            <rect x="62" y="318" width="112" height="30" rx="15"/>
+            <text x="118" y="338">Argentina</text>
+          </g>
+        </svg>
+      </div>
+    </section>
+
+    <!-- SERVICIOS -->
+    <section class="section" id="servicios">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Servicios</p>
+          <h2>Soluciones para importar sin complicaciones</h2>
+          <p class="lead">Analizamos cada operación y proponemos la alternativa que mejor se adapta a tu mercadería, tus volúmenes y tus tiempos.</p>
+        </div>
+
+        <div class="grid grid-2">
+          <article class="card card-feature">
+            <span class="icon-tile icon-tile-lg"><svg class="icon"><use href="#i-ship"/></svg></span>
+            <h3>Importaciones marítimas</h3>
+            <p>Para importar en cantidades comerciales. Gestionamos cargas consolidadas y contenedores completos, según el volumen de cada operación.</p>
+            <ul class="tags"><li>Carga consolidada (LCL)</li><li>Contenedor completo (FCL)</li><li>Empresas y distribuidores</li></ul>
+          </article>
+          <article class="card card-feature">
+            <span class="icon-tile icon-tile-lg"><svg class="icon"><use href="#i-plane"/></svg></span>
+            <h3>Importaciones aéreas</h3>
+            <p>Cuando el tiempo de tránsito importa. Ideal para mercadería de menor volumen, muestras comerciales y productos que necesitan llegar antes.</p>
+            <ul class="tags"><li>Menor volumen</li><li>Muestras comerciales</li><li>Tránsito más rápido</li></ul>
+          </article>
+        </div>
+
+        <div class="grid grid-3 grid-services">
+          <article class="card">
+            <span class="icon-tile"><svg class="icon"><use href="#i-search"/></svg></span>
+            <h3>Búsqueda de proveedores</h3>
+            <p>Te ayudamos a identificar fabricantes y proveedores chinos según el producto que querés importar.</p>
+          </article>
+          <article class="card">
+            <span class="icon-tile"><svg class="icon"><use href="#i-file-check"/></svg></span>
+            <h3>Gestión aduanera</h3>
+            <p>Coordinamos la documentación y los requisitos aduaneros de cada tipo de mercadería.</p>
+          </article>
+          <article class="card">
+            <span class="icon-tile"><svg class="icon"><use href="#i-truck"/></svg></span>
+            <h3>Puerta a puerta</h3>
+            <p>Coordinamos la logística desde el origen hasta el destino acordado, según la modalidad de la operación.</p>
+          </article>
+          <article class="card">
+            <span class="icon-tile"><svg class="icon"><use href="#i-warehouse"/></svg></span>
+            <h3>Almacenamiento y distribución</h3>
+            <p>Soluciones para recibir, organizar y distribuir tu mercadería importada.</p>
+          </article>
+          <article class="card">
+            <span class="icon-tile"><svg class="icon"><use href="#i-package"/></svg></span>
+            <h3>Importación de muestras</h3>
+            <p>Probá productos con pedidos chicos antes de avanzar con una operación a mayor escala.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PARA QUIÉN -->
+    <section class="section section-alt" id="para-quien">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">¿Para quién?</p>
+          <h2>Acompañamos a quienes quieren crecer importando</h2>
+          <p class="lead">Tanto si ya tenés experiencia importando como si estás por hacer tu primera operación.</p>
+        </div>
+        <div class="grid grid-3">
+          <article class="card">
+            <span class="icon-tile"><svg class="icon"><use href="#i-building"/></svg></span>
+            <h3>Empresas y pymes</h3>
+            <p>Importá productos, insumos o mercadería para abastecer tu operación comercial.</p>
+          </article>
+          <article class="card">
+            <span class="icon-tile"><svg class="icon"><use href="#i-rocket"/></svg></span>
+            <h3>Emprendedores</h3>
+            <p>¿Querés lanzar tu marca o vender productos importados? Te acompañamos desde tu primera importación.</p>
+          </article>
+          <article class="card">
+            <span class="icon-tile"><svg class="icon"><use href="#i-container"/></svg></span>
+            <h3>Distribuidores y mayoristas</h3>
+            <p>Soluciones logísticas competitivas para trabajar con volúmenes comerciales y sostener tu abastecimiento.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CÓMO TRABAJAMOS -->
+    <section class="section" id="como-trabajamos">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Cómo trabajamos</p>
+          <h2>Tu importación en 5 pasos</h2>
+          <p class="lead">Te mantenemos informado durante todo el proceso, con una comunicación clara en cada etapa.</p>
+        </div>
+        <ol class="steps">
+          <li><span class="step-num">1</span><h3>Consulta inicial</h3><p>Nos contás qué querés importar, cantidades aproximadas y características de la mercadería.</p></li>
+          <li><span class="step-num">2</span><h3>Análisis</h3><p>Evaluamos origen, destino, volumen y la modalidad de transporte más conveniente.</p></li>
+          <li><span class="step-num">3</span><h3>Propuesta</h3><p>Te enviamos una propuesta de servicio adaptada a tu operación.</p></li>
+          <li><span class="step-num">4</span><h3>Coordinación</h3><p>Organizamos cada etapa del servicio y te mantenemos al tanto del avance.</p></li>
+          <li><span class="step-num">5</span><h3>Entrega</h3><p>Coordinamos la etapa final según las condiciones y la modalidad acordadas.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- POR QUÉ GREVA -->
+    <section class="section section-dark" id="por-que">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow eyebrow-light">Por qué GREVA</p>
+          <h2>Más que un intermediario: un socio comercial</h2>
+          <p class="lead">Transformamos procesos de importación complejos en experiencias claras, organizadas y accesibles.</p>
+        </div>
+        <div class="grid grid-3 pillars">
+          <div class="pillar"><svg class="icon"><use href="#i-shield"/></svg><h3>Confianza</h3><p>Relaciones comerciales transparentes y duraderas.</p></div>
+          <div class="pillar"><svg class="icon"><use href="#i-check"/></svg><h3>Simplicidad</h3><p>Te explicamos cada paso para que decidas con claridad.</p></div>
+          <div class="pillar"><svg class="icon"><use href="#i-tag"/></svg><h3>Competitividad</h3><p>Buscamos alternativas logísticas y comerciales convenientes.</p></div>
+          <div class="pillar"><svg class="icon"><use href="#i-users"/></svg><h3>Acompañamiento</h3><p>Atención personalizada, tanto si recién empezás como si ya importás.</p></div>
+          <div class="pillar"><svg class="icon"><use href="#i-repeat"/></svg><h3>Flexibilidad</h3><p>Nos adaptamos a distintos productos, volúmenes y modalidades.</p></div>
+          <div class="pillar"><svg class="icon"><use href="#i-trending"/></svg><h3>Crecimiento</h3><p>Te acompañamos a medida que tu negocio se expande.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CALCULADORA -->
+    <section class="section" id="calculadora">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Herramienta</p>
+          <h2>Calculá el volumen de tu carga</h2>
+          <p class="lead">Ingresá las medidas de tus bultos para estimar el volumen (marítimo) y el peso volumétrico (aéreo).</p>
+        </div>
+
+        <div class="calc">
+          <form class="calc-form" id="calc-form" novalidate>
+            <fieldset>
+              <legend>Medidas de cada bulto (cm)</legend>
+              <div class="calc-dims">
+                <label>Largo<input type="number" name="largo" min="0" step="any" inputmode="decimal" placeholder="50"></label>
+                <label>Ancho<input type="number" name="ancho" min="0" step="any" inputmode="decimal" placeholder="40"></label>
+                <label>Alto<input type="number" name="alto" min="0" step="any" inputmode="decimal" placeholder="30"></label>
+              </div>
+            </fieldset>
+            <div class="calc-row">
+              <label>Cantidad de bultos<input type="number" name="bultos" min="1" step="1" inputmode="numeric" placeholder="10"></label>
+              <label>Peso por bulto (kg)<input type="number" name="peso" min="0" step="any" inputmode="decimal" placeholder="8"></label>
+            </div>
+          </form>
+
+          <div class="calc-results">
+            <dl aria-live="polite" aria-atomic="true">
+              <div><dt>Volumen total <small>marítimo</small></dt><dd id="r-m3">—</dd></div>
+              <div><dt>Peso real total</dt><dd id="r-real">—</dd></div>
+              <div><dt>Peso volumétrico <small>aéreo · ÷6000</small></dt><dd id="r-vol">—</dd></div>
+              <div class="calc-highlight"><dt>Peso facturable <small>aéreo</small></dt><dd id="r-fact">—</dd></div>
+            </dl>
+            <p class="calc-note">En aéreo se toma el mayor entre el peso real y el volumétrico. Valores orientativos: la cotización final depende de la mercadería, el embalaje y la modalidad.</p>
+            <button type="button" class="btn btn-primary btn-block" id="calc-to-quote" disabled>Cotizar con estos datos <svg class="icon"><use href="#i-arrow"/></svg></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- NOSOTROS -->
+    <section class="section section-alt" id="nosotros">
+      <div class="container about">
+        <div>
+          <p class="eyebrow">Quiénes somos</p>
+          <h2>Una empresa argentina que te acerca al mercado chino</h2>
+          <p class="lead">GREVA se especializa en la gestión de importaciones desde China. Trabajamos con empresas, emprendedores y distribuidores mayoristas para que puedan concentrarse en su negocio mientras coordinamos la operación internacional.</p>
+        </div>
+        <div class="about-cards">
+          <article class="card">
+            <h3>Misión</h3>
+            <p>Facilitar el acceso de empresas y emprendedores argentinos al comercio internacional, con soluciones de importación eficientes, competitivas y adaptadas a cada necesidad.</p>
+          </article>
+          <article class="card">
+            <h3>Visión</h3>
+            <p>Ser una empresa referente en importaciones desde China hacia Argentina, reconocida por la confianza de nuestros clientes y la calidad de nuestra atención.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- COTIZAR -->
+    <section class="section" id="cotizar">
+      <div class="container quote">
+        <div class="quote-info">
+          <p class="eyebrow">Cotización</p>
+          <h2>Contanos qué querés importar</h2>
+          <p class="lead">Completá el formulario y te respondemos con una propuesta para tu operación. Sin compromiso.</p>
+          <p class="quote-tip">Para una cotización más precisa, sumá:</p>
+          <ul class="checklist">
+            <li><svg class="icon"><use href="#i-check"/></svg>Producto y para qué se usa</li>
+            <li><svg class="icon"><use href="#i-check"/></svg>Cantidades aproximadas</li>
+            <li><svg class="icon"><use href="#i-check"/></svg>Medidas y peso de los bultos</li>
+            <li><svg class="icon"><use href="#i-check"/></svg>Ciudad de destino</li>
+          </ul>
+          <div class="contact-lines">
+            <a class="contact-line wa-link" href="#" target="_blank" rel="noopener" hidden><svg class="icon"><use href="#i-chat"/></svg>Escribinos por WhatsApp</a>
+            <a class="contact-line" href="mailto:contact@greva.ar"><svg class="icon"><use href="#i-mail"/></svg>contact@greva.ar</a>
+          </div>
+        </div>
+
+        <form class="card quote-form" id="quote-form">
+          <div class="form-row">
+            <label>Nombre y apellido *<input type="text" name="nombre" autocomplete="name" required></label>
+            <label>Empresa <span class="opt">(opcional)</span><input type="text" name="empresa" autocomplete="organization"></label>
+          </div>
+          <div class="form-row">
+            <label>Teléfono / WhatsApp *<input type="tel" name="telefono" autocomplete="tel" required></label>
+            <label>Email <span class="opt">(opcional)</span><input type="email" name="email" autocomplete="email"></label>
+          </div>
+          <div class="form-row">
+            <label>Perfil *
+              <select name="perfil" required>
+                <option value="">Elegí una opción</option>
+                <option>Empresa / pyme</option>
+                <option>Emprendedor/a</option>
+                <option>Distribuidor / mayorista</option>
+              </select>
+            </label>
+            <label>Ciudad de destino <span class="opt">(opcional)</span><input type="text" name="destino" autocomplete="address-level2"></label>
+          </div>
+          <fieldset class="pills">
+            <legend>Modalidad *</legend>
+            <label class="pill"><input type="radio" name="modalidad" value="Marítima" required>Marítima</label>
+            <label class="pill"><input type="radio" name="modalidad" value="Aérea">Aérea</label>
+            <label class="pill"><input type="radio" name="modalidad" value="No sé, quiero asesoramiento">No sé, quiero asesoramiento</label>
+          </fieldset>
+          <label>¿Qué querés importar? *<input type="text" name="producto" required placeholder="Ej.: auriculares bluetooth, repuestos, indumentaria…"></label>
+          <label>Cantidades, medidas y otros datos <span class="opt">(opcional)</span><textarea name="detalle" id="detalle" rows="4"></textarea></label>
+          <button type="submit" class="btn btn-primary btn-block">Enviar consulta <svg class="icon"><use href="#i-arrow"/></svg></button>
+          <p class="form-note" id="form-note">Al enviar se abre tu app de email con el mensaje listo.</p>
+          <div class="form-status" id="form-status" tabindex="-1" hidden>
+            <p>Si no se abrió nada, copiá el mensaje y envialo a <a href="mailto:contact@greva.ar">contact@greva.ar</a>.</p>
+            <button type="button" class="btn btn-outline btn-sm" id="copy-msg">Copiar mensaje</button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>
+        <img src="assets/logo-white.png" alt="GREVA Importadora" width="513" height="200" class="footer-logo">
+        <p>Conectamos tu negocio con el mundo.</p>
+      </div>
+      <nav aria-label="Pie de página">
+        <a href="#servicios">Servicios</a>
+        <a href="#como-trabajamos">Cómo trabajamos</a>
+        <a href="#calculadora">Calculadora</a>
+        <a href="#cotizar">Cotizar</a>
+      </nav>
+      <div class="footer-contact">
+        <a class="wa-link" href="#" target="_blank" rel="noopener" hidden><svg class="icon"><use href="#i-chat"/></svg>WhatsApp</a>
+        <a href="mailto:contact@greva.ar"><svg class="icon"><use href="#i-mail"/></svg>contact@greva.ar</a>
+        <span><svg class="icon"><use href="#i-pin"/></svg>Argentina</span>
+      </div>
+    </div>
+    <div class="container footer-bottom">© 2026 GREVA Importadora. Todos los derechos reservados.</div>
+  </footer>
+
+  <a class="wa-float wa-link" href="#" target="_blank" rel="noopener" aria-label="Escribinos por WhatsApp" hidden>
+    <svg class="icon"><use href="#i-chat"/></svg>
+  </a>
+
+  <script src="main.js"></script>
+</body>
+</html>
